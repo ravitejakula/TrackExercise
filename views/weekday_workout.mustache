@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+  }
+</style>
+<script>
+  window.onload = function() {
+    var weekday = `{{weekday}}`;
+    var json_data = {{{workout_data}}};
+    var rest = json_data["data"][weekday]["rest"];
+    var weekday_workout_data = json_data["data"][weekday];
+    if (rest == true) {
+      fillRestdayHTML(weekday_workout_data, weekday);
+    } else {
+      fillWeekdayHTML(weekday_workout_data["exlist"], weekday);
+    }
+
+function getWeekdayIndex(weekday) {
+  console.log("The passed weekday is " + weekday);
+  switch (weekday) {
+    case "sunday":
+      return 1;
+      break;
+    case "monday":
+      return 2;
+      break;
+    case "tuesday":
+      return 3;
+      break;
+    case "wednesday":
+      return 4;
+      break;
+    case "thursday":
+      return 5;
+      break;
+    case "friday":
+      return 6;
+      break;
+    case "saturday":
+      return 7;
+      break;
+    default:
+      return -1;
+      break;
+  }
+}
+    function fillWeekdayHTML(workout_info, weekday) {
+      console.log("The value passed into fillWeekday is %o", workout_info);
+      var index;
+      var weekday_index = getWeekdayIndex(weekday);
+      console.log(weekday_index);
+      var workout_table = '<table style="width:75%">';
+      workout_table += workout_table +=
+      '<tr><th>Media</th><th>Exercise</th><th>Set 1</th><th>Set 2</th><th>Set 3</th></tr>';
+      for (index in workout_info) {
+        console.log("Filling in html for exercise %s with set1=%s, set2=%s," +
+        "set3=%s", workout_info[index]["exercise"], workout_info[index]["set1"],
+        workout_info[index]["set2"], workout_info[index]["set3"]);
+        workout_table += '<tr id=><td id="media_'+weekday_index+'_'+index+'">'+workout_info[index]["media"]+
+                         '</td><td id="exercise_'+weekday_index+'_'+index+'">'+workout_info[index]["exercise"]+
+                         '</td><td id="set1_'+weekday_index+'_'+index+'">'+workout_info[index]["set1"]+
+                         '</td><td id="set2_'+weekday_index+'_'+index+'">'+workout_info[index]["set2"]+
+                         '</td><td id="set3_'+weekday_index+'_'+index+'">'+workout_info[index]["set3"]+
+                         '</td></tr>';
+      }
+      document.getElementById("workout_table").innerHTML = workout_table;
+      printIds();
+    }
+
+    function fillRestdayHTML(workout_info) {
+      console.log("Filling in rest day html for %o", workout_info);
+      console.log(workout_info.rest);
+    }
+    //var workout_data = JSON.parse(workout);
+    //console.log(workout_data);
+    //;
+    function printIds() {
+      console.log(document.getElementById("media_2_1").innerHTML);
+    }
+  }
+</script>
+<h1 align="center"> Welcome to TrackEx! <br>The selected day is {{weekday}}</h1>
+<div id="workout_table" align="center">
+</div>
+<div align="center">
+  <form method="GET" action="/track">
+    <input type="submit" value="Home">
+  </form>
+</div>
+</html>

@@ -1,0 +1,133 @@
+{
+  "data": {
+    "monday": {
+      "rest":false,
+      "exlist":
+      [
+        {
+              "media":"tbd_m", "exercise":"e1_mo", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd_m", "exercise":"e2_mo", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e3_mo", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e4_mo", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e5_tu", "set1":"1","set2":"2","set3":"3"
+        }
+      ]
+    },
+    "tuesday": {
+      "rest":false,
+      "exlist":
+      [
+        {
+              "media":"tbd", "exercise":"e1_tu", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e2_tu", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e3_tu", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e4_tu", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e5_tu", "set1":"1","set2":"2","set3":"3"
+        }
+      ]
+    },
+    "wednesday": {
+      "rest":false,
+      "exlist":
+      [
+        {
+              "media":"tbd", "exercise":"e1_we", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e2_we", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e3_we", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e4_we", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e5_we", "set1":"1","set2":"2","set3":"3"
+        }
+      ]
+    },
+    "thursday": {
+      "rest":false,
+      "exlist":
+      [
+        {
+              "media":"tbd", "exercise":"e1_th", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e2_th", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e3_th", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e4_th", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e5_th", "set1":"1","set2":"2","set3":"3"
+        }
+      ]
+    },
+    "friday": {
+      "rest":false,
+      "exlist":
+      [
+        {
+              "media":"tbd", "exercise":"e1_fr", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e2_fr", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e3_fr", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e4_fr", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e5_fr", "set1":"1","set2":"2","set3":"3"
+        }
+      ]
+    },
+    "saturday": {
+      "rest":false,
+      "exlist":
+      [
+        {
+              "media":"tbd", "exercise":"e1_sa", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e2_sa", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e3_sa", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e4_sa", "set1":"1","set2":"2","set3":"3"
+        },
+        {
+              "media":"tbd", "exercise":"e5_sa", "set1":"1","set2":"2","set3":"3"
+        }
+      ]
+    },
+    "sunday": {
+      "rest":true
+    }
+  }
+}
